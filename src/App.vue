@@ -7,7 +7,7 @@
     </div>
     <transition name="fadeIn">
       <div v-show="isShowBar" class="asidebar">
-      <div class="content">
+      <div class="content-aside">
         <div class="aside-head">
           <h2>Language</h2>
         </div>
@@ -148,8 +148,8 @@ export default {
     right: 0;
     z-index: 2;
     display: flex;
-    .content {
-      flex: 0 0 160px;
+    .content-aside {
+      flex: 0 0 180px;
       height: 100%;
       background: rgba(115,115,115,.9);
       color: #f1f1f1;
@@ -179,11 +179,13 @@ export default {
       }
       .lang-name:hover {
         background-color: #F1F1F1;
-        color: #3844F0;
+        color: #2136A9;
+        border-right: 1px solid #f1f1f1;
       }
       .current {
-        color:#3844F0;
-        background-color: #fff;
+        color:#2136A9;
+        background-color: #f1f1f1;
+        border:-right 1px solid #f1f1f1;
       }
     }
     .mask {
@@ -215,7 +217,7 @@ export default {
 
     .item {
       width: 100%;
-      padding: 15px 10px;
+      padding: 15px 5%;
       text-align: left;
       .name {
         font-size: 120%;
@@ -295,6 +297,14 @@ export default {
     }
 
   }
+  @media screen and (min-width: 760px){
+    .content {
+      width: 70%;
+      margin-left: 15%;
+      margin-right: 15%;
+    }
+  }
+
 
   .about {
     display: flex;
