@@ -42,8 +42,9 @@ export default {
 		left: 0;
 		bottom: 0;
 		right: 0;
-		z-index: 2;
+		z-index: 3;
 		display: flex;
+    flex-direction: column;
 		.content {
 			flex: 0 0 160px;
 			height: 100%;
@@ -67,7 +68,7 @@ export default {
         text-align: center;
         letter-spacing: 2px;
         height: 80px;
-        line-height: 40px;
+        // line-height: 40px;
 			}
 			.lang-name {
 				width: 100%;
