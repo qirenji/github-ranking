@@ -48,7 +48,7 @@ export default {
 		.content {
 			flex: 0 0 160px;
 			height: 100%;
-			background: rgba(0,0,0,.7);
+			background: rgba(0,0,0,.6);
 			color: #f1f1f1;
 			.aside-head {
 				flex: 1;
@@ -57,7 +57,7 @@ export default {
         justify-content: center;
         align-items: center;
         height: 100px;
-        // margin-top: 10px;
+        margin-top: 10px;
 			}
 			.aside-content {
 				width: 100%;
@@ -68,7 +68,7 @@ export default {
         text-align: center;
         letter-spacing: 2px;
         height: 80px;
-        // line-height: 40px;
+        line-height: 40px;
 			}
 			.lang-name {
 				width: 100%;

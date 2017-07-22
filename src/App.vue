@@ -167,14 +167,17 @@ export default {
         flex: 1;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        // justify-content: center;
+        // align-items: center;
         text-align: center;
         letter-spacing: 2px;
-        height: 80px;
-        line-height: 40px;
       }
       .lang-name {
         width: 100%;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         border-bottom: 1px solid rgba(255,255,255,.2);
       }
       .lang-name:hover {
