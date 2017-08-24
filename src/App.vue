@@ -5,6 +5,7 @@
       <i @click="isShowBar=true" class="icon-menu"></i>
       <h1>GitHub Ranking</h1> 
     </div>
+    <!-- 侧边栏 -->
     <transition name="fadeIn">
       <div v-show="isShowBar" class="asidebar">
       <div class="content-aside">
@@ -20,7 +21,7 @@
       <div @click="isShowBar=false" class="mask"></div>
       </div>
     </transition>
-
+    <!-- 内容 -->
     <div class="content">
       <i v-show="isLoading" class="icon-loading"></i>
       <div v-for="(item, index) of infos" v-show="!isLoading" class="item">
@@ -44,7 +45,7 @@
         </div>
       </div>
     </div>
-
+<!-- 关于页面 -->
     <div v-show="isShowAbout" class="about">
       <i @click="isShowAbout=false" class="close"></i>
       <div class="about-content">
