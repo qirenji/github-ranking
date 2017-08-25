@@ -12,7 +12,7 @@
         <div class="aside-head">
           <h2>Language</h2>
         </div>
-
+        <!-- 搜索关键字 -->
         <div class="aside-content">
           <div @click="search(item, index)" v-for="(item, index) of langs" class="lang-name" :class="{current: index===currentIndex}">{{item}}</div >
           <div @click="isShowAbout=true" class="lang-name">About</div>
@@ -21,7 +21,7 @@
       <div @click="isShowBar=false" class="mask"></div>
       </div>
     </transition>
-    <!-- 内容 -->
+    <!-- 显示内容 -->
     <div class="content">
       <i v-show="isLoading" class="icon-loading"></i>
       <div v-for="(item, index) of infos" v-show="!isLoading" class="item">
@@ -78,6 +78,7 @@ export default {
     }
   },
   methods: {
+    // 获取显示内容
     getData(lang='JavaScript', sort='stars') {
       this.axios.get(`/api/github-ranking/${lang.replace('#', '%23')}/${sort}`)
         .then(result => result.data)
@@ -93,6 +94,7 @@ export default {
           this.isLoading = false;
         })
     },
+    // 更改搜索显示内容
     search(lang, index) {
       this.currentIndex = index;
       this.lang = lang;
@@ -102,6 +104,7 @@ export default {
     }
   },
   mounted() {
+    // 默认显示内容
     this.search('JavaScript',0);
   }
 }

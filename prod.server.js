@@ -30,6 +30,7 @@ router.get('/github-ranking/:lang/:sorts', (req, res) => {
       return cheerio.load(body);
     }
   }
+  // 爬虫
   let p = new Promise((resolve, reject) => {
     rp(options)
       .then($ => {
@@ -55,6 +56,7 @@ router.get('/github-ranking/:lang/:sorts', (req, res) => {
         resolve(infos);
       })
     });
+    // 返回数据
     p.then((infos) => {
       res.json(infos)
     });
