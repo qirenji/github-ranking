@@ -29,11 +29,11 @@
 
 **首页**
 
-![首页](http://www.qirenji.info/img/github-ranking/index.png)
+<img src="http://www.qirenji.info/img/github-ranking/index.png" width="320">
 
 **侧边栏项目切换**
 
-![文章详情页](/http://www.qirenji.info/img/github-ranking/aside.png)
+<img src="http://www.qirenji.info/img/github-ranking/aside.png" width="320">
 
 
 ## 技术栈
