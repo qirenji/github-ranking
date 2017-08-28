@@ -5,13 +5,13 @@
 ## Build Setup
 
 ``` bash
-	npm install -----安装依赖
+npm install -----安装依赖
 
-	npm run dev -----运行
+npm run dev -----运行
 
-	npm run build -----打包
+npm run build -----打包
 
-	node prod.server.js -----打包后运行
+node prod.server.js -----打包后运行
 ```
 
 博客地址：http://www.qirenji.info/2017/07/20/Vue-js打造的GitHub排行榜/
