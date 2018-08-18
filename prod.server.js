@@ -36,9 +36,9 @@ router.get('/github-ranking/:lang/:sorts', (req, res) => {
       .then($ => {
         let $titles = $('a.v-align-middle');
 
-        let $descs = $('.col-9.d-inline-block.text-gray.mb-2.pr-4');
-        let $stars = $('div.col-2 a');
-        let $updateDate = $('p.f6.text-gray.mb-0.mt-2');
+        let $descs = $('.col-12.col-md-9.d-inline-block.text-gray.mb-2.pr-4');
+        let $stars = $('.pl-2.pl-md-0.text-right.flex-auto.min-width-0 a');
+        let $updateDate = $('.d-flex.flex-wrap .f6.text-gray.mr-3.mb-0.mt-2:last-of-type');
 
         $titles.each((index, item) => {
           infos.titles.push($(item).text().replace(/\s/g, ''));
